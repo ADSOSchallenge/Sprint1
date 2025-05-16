@@ -1,4 +1,4 @@
-//Acordeão do faq
+//Acordion do faq
 const accordions = document.querySelectorAll('.accordion');
 
 accordions.forEach((accordion) => {

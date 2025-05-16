@@ -9,43 +9,53 @@
     <script src="../js/script.js" defer></script>
 </head>
 <body>
-   <header>
+    <header>
         <h1>Contato</h1>
-    <nav>
-        <a href="../index.html">Início</a>   
-        <a href="./integrantes.html">Integrantes</a>
-        <a href="./contato.html">Contato</a>
-        <a href="./tutorial.html">Tutorial</a>
-    </nav>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="./integrantes.html">Integrantes</a>
+            <a href="./contato.html">Contato</a>
+            <a href="./tutorial.html">Tutorial</a>
+        </nav>
     </header>
+
     <main>
         <section>
             <form>
-                    <fieldset class="personal-data">
-                    <div>
+                <fieldset class="personal-data">
                     <legend>Dados Pessoais:</legend>
-                    <label for="idNome">Nome:</label>
-                    <input type="text" name="nome" id="idNome" placeholder="Digite seu nome..."><br><br>
-                    
-                    <label for="idTel">Telefone:</label>
-                    <input type="tel" required maxlength="11" name="tel" id="idTel" placeholder="Digite seu telefone..."><br><br>
-                    
-                    <label for="idEmail">Email:</label>
-                    <input type="email" name="email" id="idEmail" placeholder="Digite seu email..." required maxlength="50"><br><br>
+
+                    <div class="form-group">
+                        <label for="idNome">Nome:</label>
+                        <input type="text" name="nome" id="idNome" placeholder="Digite seu nome...">
                     </div>
-                    <div>
-                    <button type="submit" id="enviarbt">Enviar!</button>
+
+                    <div class="form-group">
+                        <label for="idTel">Telefone:</label>
+                        <input type="tel" required maxlength="11" name="tel" id="idTel" placeholder="Digite seu telefone...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="idEmail">Email:</label>
+                        <input type="email" name="email" id="idEmail" placeholder="Digite seu email..." required maxlength="50">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" id="enviarbt">Enviar!</button>
                     </div>
                 </fieldset>
             </form>
         </section>
+
         <section>
-            <p>Para entrar em contato diretamente com o ADSOS, mande um email para <a
-                    href="mailto:adsoschallenge@gmail.com">adsoschallenge@gmail.com</a>
+            <p>Para entrar em contato diretamente com o ADSOS, mande um email para
+                <a href="mailto:adsoschallenge@gmail.com">adsoschallenge@gmail.com</a>
+            </p>
         </section>
     </main>
+
+    <footer>
+        Copyright 2025 © - ADSOS - Todos os direitos reservados.
+    </footer>
 </body>
-<footer>
-      Copyright 2025 © - ADSOS - Todos os direitos reservados.
-</footer>
 </html>

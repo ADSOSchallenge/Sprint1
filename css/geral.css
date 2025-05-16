@@ -1,77 +1,73 @@
-/*Imagens*/
-.integrantesimg{
-    width: 300px;
-}
-.botao{
-    width: 60px;
-    margin-right: 10px;
+/*Estrutura*/
+body {
+    background-color: white;
     text-align: center;
-}
-.integrantesmenu{
-    width: 300px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-section img{
-    text-align: center;
+header {
+    padding: 35px;
 }
-/*estrutura e cor*/
-body{
-    background-color:white;
-    text-align: center;
-}
-footer{
+
+footer {
     background-color: #4d9fa9;
     font-size: 20px;
     padding: 30px;
 }
-header{
-    padding: 35px;
-}
-section{
+
+section {
     padding: 25px;
 }
-/*Arcordeão FAQ*/
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: background-color 0.3s;
-    margin: 5px 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+nav {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Títulos e Textos*/
+h1, h2 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
     font-size: 20px;
+    text-align: left;
 }
 
-.accordion:hover {
-    background-color: #ddd;
+/*Imagens*/
+section img {
+    text-align: center;
 }
 
-.accordion:after {
-    content: '\002B'; 
-    font-size: 16px;
-    float: right;
+.integrantesimg,
+.integrantesmenu {
+    width: 300px;
 }
 
-.accordion.active:after {
-    content: "\2212";
+.botao {
+    width: 60px;
+    margin-right: 10px;
+    text-align: center;
 }
 
-.panel {
-    padding: 0 15px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-    font-size: 15px;
+.rm {
+    text-align: center;
 }
 
-.panel.show {
-    display: block;
-}
-/*form*/
+/* === Formulário === */
 .personal-data {
     border: 4px solid #4d9fa9;
     border-radius: 10px;
@@ -93,7 +89,7 @@ section{
 .form-group {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     margin: 10px 0;
 }
 
@@ -111,31 +107,43 @@ section{
     text-align: center;
 }
 
-
-/*Fontes*/
-h2{
-    font-family: Georgia, serif;
-    font-size: 30px;
-}
-
-p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+/*Arcordion-FAQ*/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
     text-align: left;
+    outline: none;
+    transition: background-color 0.3s;
+    margin: 5px 0;
+    font-size: 20px;
 }
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+
+.accordion:hover {
+    background-color: #ddd;
 }
-nav{
-    font-family: Georgia;
-    font-size: 25px;
-    text-align: center;
-    font-style: bold;
+
+.accordion::after {
+    content: '\002B'; /* Plus symbol */
+    font-size: 16px;
+    float: right;
 }
-a{
-    text-decoration: none;;
+
+.accordion.active::after {
+    content: '\2212'; /* Minus symbol */
 }
-.rm{
-    text-align: center;
+
+.panel {
+    padding: 0 15px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.panel.show {
+    display: block;
 }
