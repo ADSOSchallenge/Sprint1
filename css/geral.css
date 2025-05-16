@@ -42,7 +42,8 @@ h1 {
 
 h2 {
     font-size: 30px;
-    background-color: #2d609743;
+    background-color: #467ab1;
+    color: white;
     box-sizing: padding-box 10px;
     text-align: left;
 }
