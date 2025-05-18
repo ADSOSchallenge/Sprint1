@@ -10,9 +10,8 @@ header {
     background-image: url('../img/header.png');
     background-size: cover;
     background-position: center;
-    height: 100px; 
+    height: 100px;
     color: white;
-    text-align: center;
 }
 
 footer {
@@ -32,20 +31,15 @@ section {
 /* Títulos e Textos */
 h1, h2 {
     font-family: 'Roboto', 'Open Sans', 'Lato', sans-serif;
-}
-header h1{
-    font-size: 40px;
-}
-h1 {
     font-size: 30px;
+    color: white;
+}
+h2{
+    background-color: #4d9fa9;
 }
 
-h2 {
-    font-size: 30px;
-    background-color: #467ab1;
-    color: white;
-    box-sizing: padding-box 10px;
-    text-align: left;
+header h1 {
+    font-size: 40px;
 }
 
 p {
@@ -55,37 +49,24 @@ p {
 
 nav {
     font-size: 25px;
-    text-align: center;
     font-weight: bold;
-}
-nav a{
-    font-size: 27px;
-}
-a {
-    text-decoration: none;
-    color: #3d8993;
-}
-
-nav {
-    background-color: #4d9fa9; 
-    padding: 10px 20px; 
-    text-align: center; 
+    background-color: #4d9fa9;
+    padding: 10px 20px;
 }
 
 nav a {
     color: #fff;
     font-size: 16px;
-    text-decoration: none; 
+    text-decoration: none;
     padding: 10px 15px;
-    margin: 0 10px; 
+    margin: 0 10px;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-    background-color: #4d9fa9; 
-    color: #fff; 
-    transform: scale(1.1); 
+    background-color: #4d9fa9;
+    transform: scale(1.1);
 }
 
 nav a:active {
@@ -97,15 +78,13 @@ section img {
     text-align: center;
 }
 
-.integrantesimg,
-.integrantesmenu {
+.integrantesimg, .integrantesmenu {
     width: 300px;
 }
 
 .botao {
     width: 60px;
     margin-right: 10px;
-    text-align: center;
 }
 
 .rm {
@@ -118,7 +97,6 @@ section img {
     border-radius: 10px;
     padding: 15px;
     background-color: rgb(240, 248, 255);
-    width: 50%;
     max-width: 400px;
     margin: 10px auto;
 }
@@ -127,8 +105,6 @@ section img {
     font-size: 20px;
     font-weight: bold;
     color: #000000;
-    padding: 10px;
-    text-align: center;
 }
 
 .form-group {
@@ -147,24 +123,23 @@ section img {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 100%;
     max-width: 300px;
-    text-align: center;
 }
 
+/* FAQ */
 /* FAQ */
 .accordion {
     background-color: #eee;
     color: #444;
-    cursor: pointer;
     padding: 12px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, max-height 0.3s ease-out;
     margin: 5px 0;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .accordion:hover {
@@ -178,17 +153,64 @@ section img {
 }
 
 .accordion.active::after {
-    content: '\2212'; 
+    content: '\2212';
 }
 
 .panel {
     padding: 0 15px;
-    display: none;
     background-color: white;
+    display: none;
     overflow: hidden;
     font-size: 15px;
 }
 
 .panel.show {
     display: block;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  nav a {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  header {
+    height: 100px;
+    padding: 35px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  nav a {
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 0 10px;
+  }
+  .personal-data {
+    width: 50%;
+  }
+  .botao {
+    width: 60px;
+  }
+  .integrantesimg,
+  .integrantesmenu {
+    width: 300px;
+  }
 }
