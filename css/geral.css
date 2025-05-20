@@ -21,6 +21,7 @@ nav{
 }
 footer, h2 {
     background-color: #4d9fa9;
+    color: white;
 }
 nav {
     padding: 10px;
@@ -86,6 +87,10 @@ p{
 }
 .rm {
     text-align: center;
+}
+.menulogin{
+    width: 300px;
+    margin: 15px;
 }
 
 /* Formulário */

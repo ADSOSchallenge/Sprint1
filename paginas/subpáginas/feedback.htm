@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../../css/geral.css">
+    <link rel="icon" href="../../img/favicon.ico">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Deixe um feedback!</h1>
+        <nav>
+            <a href="./menulogin.html"> <-- Voltar</a>
+        </nav>
+    </header>
+        <main>
+           <article>
+        <section>
+                <h2>Avaliação de satisfação:</h2>
+                <p>Sua opinão é muito importante para nossa evolução do nosso sistema, deixe aqui seu comentário e sua nota, para assim crescermos juntos.</p>
+                <form>
+                    <fieldset>
+                        <legend>Dados Pessoais:</legend>
+
+                        <div>
+                            <label for="idNome">Nome:</label>
+                            <input type="text"  name="nome" id="idNome" placeholder="Digite seu nome...">
+                        </div>
+
+                        <div>
+                            <label for="idCpf">CPF:</label>
+                            <input type="number" required maxlength="11" name="cpf" id="idcpf" placeholder="Digite seu cpf...">
+                        </div>
+
+                        <div>
+                            <label for="idNota">Nota:</label>
+                            <input type="number" name="Nota" id="idNota" placeholder="Deixe sua nota de 0 a 10..." min="0" max="10">
+                        </div>
+
+                        <div>
+                            <label for="idCom">Comentário:</label>
+                            <input type="text" name="Comentário" id="idCom" placeholder="Digite seu comentário...">
+                        </div>
+
+                        <div>
+                            <button type="submit" id="enviarbt">Avaliar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+           </article>
+    </main>
+    <footer>
+        Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.
+    </footer>
+</body>
+</html>
