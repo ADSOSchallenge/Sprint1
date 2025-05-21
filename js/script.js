@@ -8,3 +8,5 @@ accordions.forEach((accordion) => {
         panel.classList.toggle('show');
     });
 });
+
+//Form
