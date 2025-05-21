@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../../css/geral.css">
     <link rel="icon" href="../../img/favicon.ico">
+    <script src="../js/cadastro.js"></script>
 </head>
-
 <body>
     <header>
         <h1>Cadastro</h1>
@@ -18,47 +17,37 @@
             <a href="../FAQ.html">Perguntas frequentes</a>
             <a href="../contato.html">Contato</a>
             <a href="../tutorial.html">Tutorial</a>
+            <a href="../login/login.html">Login</a>
         </nav>
     </header>
 
     <main>
-            <section>
-                <h2>Bem-vindo à página de cadastro</h2>
-            <section id="loginform">
-                <form>
-                    <fieldset>
-                        <legend>Cadastrar sua conta:</legend>
-
-                        <div>
-                            <label for="idNome">Nome:</label>
-                            <input type="text"  name="nome" id="idNome" placeholder="Digite seu nome...">
-                        </div>
-
-                        <div>
-                            <label for="idCpf">CPF:</label>
-                            <input type="number" required maxlength="11" name="cpf" id="idcpf" placeholder="Digite seu CPF...">
-                        </div>
-                        <div>
-                            <label for="idEmail">Email:</label>
-                            <input type="email" name="email" id="idEmail" placeholder="Digite seu email..." maxlength="50">
-                        </div>
-                        <div>
-                            <label for="idSenha">Senha:</label>
-                            <input type="text" name="senha" id="idSenha" placeholder="Digite uma senha..." required
-                                minlength="8" maxlength="15">
-                        </div>
-                        <div>
-                            <button type="submit" id="enviarbt">Entrar</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
+        <section>
+            <h2>Bem-vindo à página de cadastro</h2>
+            <form id="formCadastro">
+                <div>
+                    <label for="idNome">Nome:</label>
+                    <input type="text" id="idNome" placeholder="Digite seu nome..." required>
+                </div>
+                <div>
+                    <label for="idCpf">CPF:</label>
+                    <input type="number" id="idcpf" placeholder="Digite seu CPF..." required maxlength="11">
+                </div>
+                <div>
+                    <label for="idEmail">Email:</label>
+                    <input type="email" id="idEmail" placeholder="Digite seu email..." required>
+                </div>
+                <div>
+                    <label for="idSenha">Senha:</label>
+                    <input type="password" id="idSenha" placeholder="Digite sua senha..." required minlength="8">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
     </main>
+
     <footer>
         Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.
     </footer>
 </body>
-
 </html>
-
-
