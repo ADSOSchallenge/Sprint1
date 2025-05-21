@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="../../css/geral.css">
     <link rel="icon" href="../../img/favicon.ico">
-    <script src="../../js/script.js" defer></script>
 </head>
+
 <body>
     <header>
-        <h1>Deixe um feedback!</h1>
+        <h1>Cadastro</h1>
         <nav>
-            <a href="./menulogin.html"> <-- Voltar</a>
+            <a href="../../index.html">Início</a>
+            <a href="../integrantes.html">Integrantes</a>
+            <a href="../FAQ.html">Perguntas frequentes</a>
+            <a href="../contato.html">Contato</a>
+            <a href="../tutorial.html">Tutorial</a>
         </nav>
     </header>
-        <main>
-        <section>
-                <h2>Avaliação de satisfação!</h2>
-                <p>Sua opinão é muito importante para nossa evolução do nosso sistema, deixe aqui seu comentário e sua nota, para assim crescermos juntos.</p>
+
+    <main>
+            <section>
+                <h2>Bem-vindo à página de cadastro</h2>
+            <section id="loginform">
                 <form>
                     <fieldset>
-                        <legend>Formulário de avaliação:</legend>
+                        <legend>Cadastrar sua conta:</legend>
 
                         <div>
                             <label for="idNome">Nome:</label>
@@ -32,19 +38,17 @@
                             <label for="idCpf">CPF:</label>
                             <input type="number" required maxlength="11" name="cpf" id="idcpf" placeholder="Digite seu CPF...">
                         </div>
-
                         <div>
-                            <label for="idNota">Nota:</label>
-                            <input type="number" name="Nota" id="idNota" placeholder="Deixe sua nota de 0 a 10..." min="0" max="10">
+                            <label for="idEmail">Email:</label>
+                            <input type="email" name="email" id="idEmail" placeholder="Digite seu email..." maxlength="50">
                         </div>
-
                         <div>
-                            <label for="idCom">Comentário:</label>
-                            <input type="text" name="Comentário" id="idCom" placeholder="Digite seu comentário...">
+                            <label for="idSenha">Senha:</label>
+                            <input type="text" name="senha" id="idSenha" placeholder="Digite uma senha..." required
+                                minlength="8" maxlength="15">
                         </div>
-
                         <div>
-                            <button type="submit" id="enviarbt">Avaliar</button>
+                            <button type="submit" id="enviarbt">Entrar</button>
                         </div>
                     </fieldset>
                 </form>
@@ -54,4 +58,7 @@
         Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.
     </footer>
 </body>
+
 </html>
+
+
