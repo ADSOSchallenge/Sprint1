@@ -1,4 +1,4 @@
-//Funções para o cadastro.html funcionar
+//Código para cadastro.html funcionar e cadastrar contas
 document.getElementById("formCadastro").addEventListener("submit", function (e) {
     e.preventDefault();
 

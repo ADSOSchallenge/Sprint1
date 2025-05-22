@@ -1,4 +1,4 @@
-// Funções para o login.html funcionar
+//Codigo para o login.html funcionar e logar contas cadastradas
 document.getElementById("formLogin").addEventListener("submit", function (e) {
     e.preventDefault();
 
