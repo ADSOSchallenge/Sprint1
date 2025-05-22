@@ -13,93 +13,95 @@
 <body>
     <header>
         <h1>Perguntas Frequentes</h1>
-        <nav>
-            <a href="../index.html">Início</a>
-            <a href="./integrantes.html">Integrantes</a>
-            <a href="./contato.html">Contato</a>
-            <a href="./tutorial.html">Tutorial</a>
-            <a href="./login/login.html">Login</a>
+        <nav aria-label="Menu de navegação principal">
+            <a href="../index.html" aria-label="Página inicial">Início</a>
+            <a href="./integrantes.html" aria-label="Página dos integrantes">Integrantes</a>
+            <a href="./contato.html" aria-label="Página de contato">Contato</a>
+            <a href="./tutorial.html" aria-label="Página de tutorial">Tutorial</a>
+            <a href="./login/login.html" aria-label="Página de login">Login</a>
         </nav>
     </header>
 
     <main>
+        <!-- Introdução -->
         <section>
             <h2>Bem-vindo à seção de perguntas frequentes!</h2>
-            <p>Bem-vindo à nossa seção de perguntas frequentes! Aqui, você encontrará respostas para as dúvidas mais
-                comuns sobre o uso do aplicativo do Hospital das Clínicas e os serviços oferecidos. Se não encontrar a
-                informação que procura, entre em contato com nossa equipe de suporte ADSOS.</p>
+            <p>
+                Aqui, você encontrará respostas para as dúvidas mais comuns sobre o uso do aplicativo do Hospital das Clínicas
+                e os serviços oferecidos. Se não encontrar a informação que procura, entre em contato com nossa equipe de suporte ADSOS.
+            </p>
         </section>
 
+        <!-- Lista de Perguntas -->
         <article id="perguntas">
-            <button class="accordion">1. Como faço para baixar o aplicativo Portal do Paciente HC?</button>
+            <button class="accordion" aria-label="Abrir resposta da pergunta 1">1. Como faço para baixar o aplicativo Portal do Paciente HC?</button>
             <div class="panel">
-                <p>Você pode encontrar o aplicativo nas lojas oficiais: basta procurar na Google Play Store (para
-                    Android) ou na App Store (para iPhone).</p>
+                <p>Você pode encontrar o aplicativo nas lojas oficiais: Google Play Store (para Android) ou App Store (para iPhone).</p>
             </div>
 
-            <button class="accordion">2. O que acontece se minha internet cair durante o uso?</button>
+            <button class="accordion" aria-label="Abrir resposta da pergunta 2">2. O que acontece se minha internet cair durante o uso?</button>
             <div class="panel">
-                <p>Se sua conexão for interrompida, não se preocupe. Assim que a internet voltar, é só abrir o
-                    aplicativo ou o site novamente para continuar sua teleconsulta.</p>
+                <p>Se sua conexão for interrompida, não se preocupe. Assim que a internet voltar, é só abrir o aplicativo ou o site novamente para continuar sua teleconsulta.</p>
             </div>
 
-            <button class="accordion">3. Esqueci minha senha. E agora?</button>
+            <button class="accordion" aria-label="Abrir resposta da pergunta 3">3. Esqueci minha senha. E agora?</button>
             <div class="panel">
-                <p>Na tela de login, clique em “Esqueceu sua senha?” e siga os passos indicados para criar uma nova
-                    senha.</p>
+                <p>Na tela de login, clique em “Esqueceu sua senha?” e siga os passos indicados para criar uma nova senha.</p>
             </div>
 
-            <button class="accordion">4. Posso usar o app em mais de um aparelho?</button>
+            <button class="accordion" aria-label="Abrir resposta da pergunta 4">4. Posso usar o app em mais de um aparelho?</button>
             <div class="panel">
                 <p>Sim! Você pode acessar sua conta em vários dispositivos, desde que use o mesmo login e senha.</p>
             </div>
 
-            <button class="accordion">5. O que preciso para participar de uma teleconsulta?</button>
+            <button class="accordion" aria-label="Abrir resposta da pergunta 5">
+                5. O que preciso para participar de uma teleconsulta?
+              </button>
+              <div class="panel">
+                <p>Você vai precisar:</p>
+                <ul>
+                  <li>Ter uma consulta agendada;</li>
+                  <li>Estar conectado à internet;</li>
+                  <li>Ter o aplicativo Portal do Paciente HC instalado;</li>
+                  <li>Ter um cadastro ativo no aplicativo;</li>
+                  <li>Aceitar o Termo de Consentimento;</li>
+                  <li>Usar um aparelho com câmera, como celular ou computador.</li>
+                </ul>
+              </div>
+
+            <button class="accordion" aria-label="Abrir resposta da pergunta 6">6. O que é o Termo de Consentimento?</button>
             <div class="panel">
-                <p>Você vai precisar:<br>
-                    - Ter uma consulta agendada;<br>
-                    - Estar conectado à internet;<br>
-                    - Ter o aplicativo Portal do Paciente HC instalado;<br>
-                    - Ter um cadastro ativo no aplicativo;<br>
-                    - Aceitar o Termo de Consentimento;<br>
-                    - Usar um aparelho com câmera, como celular ou computador.</p>
+                <p>É um documento que confirma que você está de acordo com a realização da consulta, depois de receber todas as informações sobre ela, incluindo riscos e benefícios.</p>
             </div>
 
-            <button class="accordion">6. O que é o Termo de Consentimento?</button>
+            <button class="accordion" aria-label="Abrir resposta da pergunta 7">7. Como faço para entrar na minha teleconsulta?</button>
             <div class="panel">
-                <p>É um documento que confirma que você está de acordo com a realização da consulta, depois de receber
-                    todas as informações sobre ela, incluindo riscos e benefícios.</p>
+                <p>Depois de clicar em "Entrar na Teleconsulta", você será levado para a Sala de Espera. Quando o médico estiver pronto, clique em "Entrar na Teleconsulta" para começar.</p>
             </div>
 
-            <button class="accordion">7. Como faço para entrar na minha teleconsulta?</button>
+            <button class="accordion" aria-label="Abrir resposta da pergunta 8">8. O aplicativo funciona em qualquer celular?</button>
             <div class="panel">
-                <p>Depois de clicar em "Entrar na Teleconsulta", você será levado para a Sala de Espera. Quando o médico
-                    estiver pronto, clique em "Entrar na Teleconsulta" para começar.</p>
+                <p>O app funciona em aparelhos Android e iOS, mas é importante que o sistema do seu celular esteja atualizado para garantir o bom funcionamento.</p>
             </div>
 
-            <button class="accordion">8. O aplicativo funciona em qualquer celular?</button>
+            <button class="accordion" aria-label="Abrir resposta da pergunta 9">9. Como posso tirar dúvidas sobre o atendimento?</button>
             <div class="panel">
-                <p>O app funciona em aparelhos Android e iOS, mas é importante que o sistema do seu celular esteja
-                    atualizado para garantir o bom funcionamento.</p>
-            </div>
-
-            <button class="accordion">9. Como posso tirar dúvidas sobre o atendimento?</button>
-            <div class="panel">
-                <p>Você pode usar a seção de suporte dentro do app para enviar perguntas ou relatar problemas. Também dá
-                    pra entrar em contato pelo site do ADSOS: <a href="./contato.html" target="_blank">Clique aqui</a>.
+                <p>
+                    Você pode usar a seção de suporte dentro do app para enviar perguntas ou relatar problemas.
+                    Também dá pra entrar em contato pelo site do ADSOS:
+                    <a href="./contato.html" target="_blank" aria-label="Ir para a página de contato">Clique aqui</a>.
                 </p>
             </div>
 
-            <button class="accordion">10. O aplicativo funciona sem internet?</button>
+            <button class="accordion" aria-label="Abrir resposta da pergunta 10">10. O aplicativo funciona sem internet?</button>
             <div class="panel">
-                <p>Não. Para acessar consultas, exames e outros serviços pelo app, é necessário estar conectado à
-                    internet.</p>
+                <p>Não. Para acessar consultas, exames e outros serviços pelo app, é necessário estar conectado à internet.</p>
             </div>
         </article>
     </main>
 
     <footer>
-        Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.
+        <p>Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.</p>
     </footer>
 </body>
 

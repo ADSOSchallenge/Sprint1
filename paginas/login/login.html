@@ -7,46 +7,50 @@
     <title>Login</title>
     <link rel="stylesheet" href="../../css/geral.css">
     <link rel="icon" href="../../img/favicon.ico">
-    <script src="../js/login.js"></script>
+    <script src="../../js/login.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>Login</h1>
-        <nav>
-            <a href="../../index.html">Início</a>
-            <a href="../integrantes.html">Integrantes</a>
-            <a href="../FAQ.html">Perguntas frequentes</a>
-            <a href="../contato.html">Contato</a>
-            <a href="../tutorial.html">Tutorial</a>
+        <nav aria-label="Menu de navegação principal">
+            <a href="../../index.html" aria-label="Página inicial">Início</a>
+            <a href="../integrantes.html" aria-label="Página dos integrantes">Integrantes</a>
+            <a href="../FAQ.html" aria-label="Perguntas frequentes">Perguntas frequentes</a>
+            <a href="../contato.html" aria-label="Página de contato">Contato</a>
+            <a href="../tutorial.html" aria-label="Página de tutorial">Tutorial</a>
         </nav>
     </header>
 
     <main>
         <section>
             <h2>Bem-vindo à página de login</h2>
-            <form id="formLogin">
+            <form id="formLogin" aria-label="Formulário de login">
                 <div>
                     <label for="idCpf">CPF:</label>
-                    <input type="number" id="idcpf" placeholder="Digite seu CPF..." required>
+                    <input type="number" id="idCpf" name="cpf" placeholder="Digite seu CPF..." required>
                     <span id="spanCpf" class="error"></span>
                 </div>
+
                 <div>
                     <label for="idSenha">Senha:</label>
-                    <input type="password" id="idSenha" placeholder="Digite sua senha..." required>
+                    <input type="password" id="idSenha" name="senha" placeholder="Digite sua senha..." required>
                     <span id="spanSenha" class="error"></span>
                 </div>
+
                 <button type="submit">Entrar</button>
             </form>
         </section>
+
         <section>
             <p id="plogin">Ainda não tem uma conta?</p>
-            <a class="crieaqui" href="../login/cadastro.html">Crie Aqui!</a>
+            <a class="crieaqui" href="../login/cadastro.html" aria-label="Ir para a página de cadastro">Crie Aqui!</a>
         </section>
-        <script src="../../js/login.js"></script>
     </main>
+
     <footer>
-        Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.
+        <p>Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>

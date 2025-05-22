@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Agendamento</title>
-    <link rel="stylesheet" href="../../../css/geral.css">
-    <link rel="icon" href="../../../img/favicon.ico">
+    <link rel="stylesheet" href="../../../css/geral.css" />
+    <link rel="icon" href="../../../img/favicon.ico" />
+    <script src="../../../js/agendamento.js" defer></script>
+    
 </head>
 <body>
     <header>
         <h1>Agendar teleconsulta</h1>
         <nav>
-            <a href="../menulogin.html"> <-- Voltar</a>
+            <a href="../menulogin.html">← Voltar</a>
         </nav>
     </header>
-        <main>
+
+    <main>
         <section>
-                <h2>Agendar teleconsulta</h2>
-                <p>Para agendar sua teleconsulta é necessário completar os dados do formulário.</p>
-                <form>
-                    <fieldset>
-                        <legend>Dados:</legend>
+            <h2>Agendar teleconsulta</h2>
+            <p>Para agendar sua teleconsulta, é necessário completar os dados do formulário.</p>
+            <form id="formAgendamento" aria-label="Formulário de agendamento">
+                <fieldset>
+                    <legend>Dados:</legend>
 
-                        <div>
-                            <label for="idNome">Nome do médico:</label>
-                            <input type="text"  name="nomemed" id="idNomemed" placeholder="Digite o nome do médico...">
-                        </div>
+                    <div>
+                        <label for="idNomemed">Nome do médico:</label>
+                        <input type="text" name="nomeMedico" id="idNomemed" placeholder="Digite o nome do médico..." required />
+                    </div>
 
-                          <div>
-                            <label for="idNome">Nome do paciente:</label>
-                            <input type="text"  name="nomepac" id="idNomepac" placeholder="Digite o nome do paciente...">
-                        </div>
+                    <div>
+                        <label for="idNomepac">Nome do paciente:</label>
+                        <input type="text" name="nomePaciente" id="idNomepac" placeholder="Digite o nome do paciente..." required />
+                    </div>
 
-                        <div>
-                            <label for="idData">Data:</label>
-                            <input type="date" name="data" id="idData" placeholder="Digite a data da consulta...">
-                        </div>
+                    <div>
+                        <label for="idData">Data:</label>
+                        <input type="date" name="dataConsulta" id="idData" required />
+                    </div>
 
-                        <div>
-                            <label for="idHora">Horário:</label>
-                            <input type="time" name="Horário" id="idHora" placeholder="Digite o horário da consulta...">
-                        </div>
+                    <div>
+                        <label for="idHora">Horário:</label>
+                        <input type="time" name="horaConsulta" id="idHora" required />
+                    </div>
 
-                        <div>
-                            <label for="idEsp">Especialização:</label>
-                            <input type="text" name="Especialização" id="idEsp" placeholder="Digite a especialização da consulta...">
-                        </div>
+                    <div>
+                        <label for="idEsp">Especialização:</label>
+                        <input type="text" name="especializacao" id="idEsp" placeholder="Digite a especialização da consulta..." required />
+                    </div>
 
-                        <div>
-                            <button type="submit" id="enviarbt">Agendar</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
+                    <div>
+                        <button type="submit" id="enviarbt">Agendar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
+
     <footer>
         Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.
     </footer>

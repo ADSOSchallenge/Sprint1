@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../../css/geral.css">
     <link rel="icon" href="../../img/favicon.ico">
-    <script src="../js/cadastro.js"></script>
+    <script src="../../js/cadastro.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Cadastro</h1>
-        <nav>
-            <a href="../../index.html">Início</a>
-            <a href="../integrantes.html">Integrantes</a>
-            <a href="../FAQ.html">Perguntas frequentes</a>
-            <a href="../contato.html">Contato</a>
-            <a href="../tutorial.html">Tutorial</a>
-            <a href="../login/login.html">Login</a>
+        <nav aria-label="Menu de navegação principal">
+            <a href="../../index.html" aria-label="Página inicial">Início</a>
+            <a href="../integrantes.html" aria-label="Página de integrantes">Integrantes</a>
+            <a href="../FAQ.html" aria-label="Perguntas frequentes">Perguntas frequentes</a>
+            <a href="../contato.html" aria-label="Página de contato">Contato</a>
+            <a href="../tutorial.html" aria-label="Tutorial do aplicativo">Tutorial</a>
+            <a href="../login/login.html" aria-label="Página de login">Login</a>
         </nav>
     </header>
 
     <main>
         <section>
             <h2>Bem-vindo à página de cadastro</h2>
-            <form id="formCadastro">
+            <form id="formCadastro" aria-label="Formulário de cadastro">
                 <div>
                     <label for="idNome">Nome:</label>
-                    <input type="text" id="idNome" placeholder="Digite seu nome..." required>
+                    <input type="text" id="idNome" name="nome" placeholder="Digite seu nome..." required>
                 </div>
+
                 <div>
                     <label for="idCpf">CPF:</label>
-                    <input type="number" id="idcpf" placeholder="Digite seu CPF..." required maxlength="11">
+                    <input type="text" id="idCpf" name="cpf" placeholder="Digite seu CPF..." required pattern="\d{11}" maxlength="11">
                 </div>
+
                 <div>
                     <label for="idEmail">Email:</label>
-                    <input type="email" id="idEmail" placeholder="Digite seu email..." required>
+                    <input type="email" id="idEmail" name="email" placeholder="Digite seu email..." required>
                 </div>
+
                 <div>
                     <label for="idSenha">Senha:</label>
-                    <input type="password" id="idSenha" placeholder="Digite sua senha..." required minlength="8">
+                    <input type="password" id="idSenha" name="senha" placeholder="Digite sua senha..." required minlength="8">
                 </div>
+
                 <button type="submit">Cadastrar</button>
             </form>
         </section>
     </main>
 
     <footer>
-        Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.
+        <p>Produzido por ADSOS - Copyright 2025 © - Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
