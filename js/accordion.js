@@ -9,4 +9,3 @@ accordions.forEach((accordion) => {
     });
 });
 
-//Form

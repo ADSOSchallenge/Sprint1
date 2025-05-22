@@ -1,25 +1,30 @@
 //Código para cadastro.html funcionar e cadastrar contas
-document.getElementById("formCadastro").addEventListener("submit", function (e) {
-    e.preventDefault();
+document.getElementById('formCadastro').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    const nome = document.getElementById("idNome").value.trim();
-    const cpf = document.getElementById("idcpf").value.replace(/\D/g, '').trim();
-    const email = document.getElementById("idEmail").value.trim();
-    const senha = document.getElementById("idSenha").value.trim();
-    if (nome.length < 3 || cpf.length !== 11 || senha.length < 8) {
-        alert("Por favor, preencha todos os campos corretamente.");
+    const nome = document.getElementById('idNome').value;
+    const cpf = document.getElementById('idCpf').value;
+    const email = document.getElementById('idEmail').value;
+    const senha = document.getElementById('idSenha').value;
+
+    if (!nome || !cpf || !email || !senha) {
+        alert('Por favor, preencha todos os campos.');
         return;
     }
 
-    const usuario = { nome, cpf, email, senha };
+    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    try {
-        localStorage.setItem("usuario", JSON.stringify(usuario));
-        alert("Cadastro realizado com sucesso!");
-        window.location.href = "login.html";
-    } catch (error) {
-        console.error("Erro ao salvar no localStorage:", error);
-        alert("Ocorreu um erro ao salvar os dados. Tente novamente.");
+    const usuarioExistente = usuarios.find(user => user.email === email);
+    if (usuarioExistente) {
+        alert('E-mail já cadastrado. Tente fazer login.');
+        return;
     }
-});
 
+    const novoUsuario = { nome, cpf, email, senha };
+    usuarios.push(novoUsuario);
+
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+    alert('Cadastro realizado com sucesso!');
+    window.location.href = 'login.html'; 
+});

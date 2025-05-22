@@ -18,7 +18,14 @@ O projeto está organizado dentro da pasta **Sprint1**, contendo diferentes dire
 
 - **img/** → Contém todas as imagens e ícones utilizados no projeto.
   
-- **js/** → Guarda arquivos JavaScript, incluindo `script.js`, responsável por adicionar interatividade ao site.
+- **js/** → Guarda arquivos JavaScript, incluindo.
+    - `accordion.js` → Responsável pelo acordeão da página `FAQ.html`.  
+    - `agenda.js` → Responsável pela visualização de consultas na página `agenda.html`.  
+    - `agendamento.js` → Encarregado pelo agendamento das consultas na página `agendamento.html`.  
+    - `cadastro.js` → Cadastra as contas dos usuários na página `cadastro.html`.
+    - `contato.js` → Registra contato do usuário para o ADSOS entrar em contato.
+    - `feedback.js` → Registra os feedbacks dos usuários na página `feedback.html`.
+    - `login.js` → Responsável por logar os usuários e redirecionar para a página `menu.html`.
  
 - **paginas/** → Diretório onde estão as páginas individuais do site:
     - `contato.html` → Página dedicada ao suporte e contato.  
@@ -28,14 +35,15 @@ O projeto está organizado dentro da pasta **Sprint1**, contendo diferentes dire
     - **login/** → Subpasta com as páginas relacionadas à autenticação e navegação do usuário:
         - `cadastro.html` → Tela de cadastro de novos usuários.
         - `login.html` → Página de login do sistema.
-        - `menulogin.html` → Menu principal exibido após o login.
-        - **login2/** → Subdiretório dentro de `login/`, contendo páginas específicas para usuários autenticados:
-            - `agendarconsul.html` → Tela para agendamento de consultas.
+        - `menu.html` → Menu principal exibido após o login.
+        - **logado/** → Subdiretório dentro de `login/`, contendo páginas específicas para usuários autenticados:
+            - `agenda.html` → Visualização da agenda de consultas do usuário.
+            - `agendamento.html` → Tela para agendamento de consultas.
             - `feedback.html` → Página para envio de feedbacks sobre o atendimento.
-            - `veragenda.html` → Visualização da agenda de consultas do usuário.
 
 - `index.html` → Arquivo HTML que serve como a página inicial do site.
 
+- **README.md** → READ.ME do projeto
 
 ---
 

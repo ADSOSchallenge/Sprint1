@@ -31,8 +31,8 @@ nav{
 
 footer, h2 {
     background-color: #4d9fa9;
-    color: white;
 }
+
 nav {
     padding: 10px;
     font-weight: bold;
@@ -85,7 +85,10 @@ a{
     text-decoration: none;
     color: #285f89;
 }
-
+#footerp{
+    color:white;
+    text-align: center;
+}
 /*Login*/
 #botaoent{
     display: inline-block;
@@ -121,6 +124,25 @@ a{
 #plogin{
     text-align: center;
 }
+
+/*Tabela de agenda*/
+table {
+    width: 100%;
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid #2c5b8e;
+    padding: 6px;
+ 
+  }
+  td{
+    color: #000000;
+  }
+  thead {
+    background: #4d9fa9;
+  }
+  
 /* Imagens */
 .integrantesimg {
     width: 300px;
