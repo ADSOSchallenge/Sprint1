@@ -261,3 +261,23 @@ button:hover {
 }
 
 /*Responsividade*/
+@media (min-width:768px){
+    .menulogin{
+        width: 225px;
+    }
+}
+
+@media (min-width:600px){
+    .menulogin{
+        width: 185px;
+    }
+}
+
+@media (max-width:600px){
+    .menulogin{
+        width: 185px;
+    }
+    .integrantesmenu{
+        width: 225px;
+    }
+}

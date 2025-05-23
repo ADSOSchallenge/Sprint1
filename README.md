@@ -8,6 +8,7 @@ Através de uma interface intuitiva, o site permite que pacientes:
 - Insiram seus dados para facilitar o contato ou obter suporte;
 - Acessem um tutorial prático sobre como utilizar o aplicativo;
 - Conheçam os desenvolvedores do projeto e encontrem seus perfis no GitHub e LinkedIn para dúvidas ou sugestões.
+- Logem em uma conta ADSOS para ver e agendar consultas e deixar feedbacks.
 
 ---
 

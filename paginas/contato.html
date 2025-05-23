@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="../index.html" aria-label="Página inicial">Início</a></li>
                 <li><a href="./integrantes.html" aria-label="Página dos integrantes">Integrantes</a></li>
-                <li><a href="./FAQ.html" aria-label="Página de perguntas frequentes">Perguntas frequentes</a></li>
+                <li><a href="./FAQ.html" aria-label="Página de FAQ">FAQ</a></li>
                 <li><a href="./tutorial.html" aria-label="Página de tutorial">Tutorial</a></li>
                 <li><a href="./login/login.html" aria-label="Página de login">Login</a></li>
             </ul>
@@ -25,47 +25,41 @@
     </header>    
 
     <main>
-        <article>
-            <section>
-                <h2>Formulário para contato</h2>
-                <p>
-                    Está com alguma dúvida específica? Entre em contato com a gente, ou preencha o formulário abaixo
-                    para que possamos retornar o mais breve possível.
-                </p>
+        <section>
+            <h2>Formulário para contato</h2>
+            <p>
+                Está com alguma dúvida específica? Entre em contato com a gente, ou preencha o formulário abaixo
+                para que possamos retornar o mais breve possível.
+            </p>
 
                 <form id="formContato" aria-label="Formulário de contato">
                     <fieldset>
                         <legend>Dados Pessoais:</legend>
 
-                        <div>
-                            <label for="idNome">Nome:</label>
-                            <input type="text" id="idNome" name="nome" placeholder="Digite seu nome..." required>
-                        </div>
-
-                        <div>
-                            <label for="idEmail">E-mail:</label>
-                            <input type="email" id="idEmail" name="email" placeholder="Digite seu e-mail..." required
-                                maxlength="50">
-                        </div>
-
-                        <div>
-                            <label for="idPerg">Dúvida:</label>
-                            <input type="text" id="idPerg" name="pergunta" placeholder="Digite sua dúvida..." required>
-                        </div>
-
-                        <div>
-                            <button aria-label="Botão de enviar contato" type="submit" id="enviarbt">Enviar!</button>
-                        </div>
-                    </fieldset>
-                </form>
-
-                <p>
-                    Quer falar diretamente com o ADSOS? Mande um e-mail para
-                    <a href="mailto:adsoschallenge@gmail.com"
-                        aria-label="Enviar e-mail para ADSOS">adsoschallenge@gmail.com</a>.
-                </p>
-            </section>
-        </article>
+                    <div>
+                        <label for="idNome">Nome:</label>
+                        <input type="text" id="idNome" name="nome" placeholder="Digite seu nome..." required>
+                    </div>
+                    <div>
+                        <label for="idEmail">E-mail:</label>
+                        <input type="email" id="idEmail" name="email" placeholder="Digite seu e-mail..." required
+                            maxlength="50">
+                    </div>
+                    <div>
+                        <label for="idPerg">Dúvida:</label>
+                        <input type="text" id="idPerg" name="pergunta" placeholder="Digite sua dúvida..." required>
+                    </div>
+                    <div>
+                        <button aria-label="Botão de enviar contato" type="submit" id="enviarbt">Enviar!</button>
+                    </div>
+                </fieldset>
+            </form>
+            <p>
+                Quer falar diretamente com o ADSOS? Mande um e-mail para
+                <a href="mailto:adsoschallenge@gmail.com"
+                    aria-label="Enviar e-mail para ADSOS">adsoschallenge@gmail.com</a>.
+            </p>
+        </section>
     </main>
 
     <footer>
