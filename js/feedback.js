@@ -1,10 +1,12 @@
 //Salvar feedback dos usuários no localstorage
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("form");
+    const form = document.getElementById("formFeedback"); 
+    const enviarBt = document.getElementById("enviarbt");  
     form.addEventListener("submit", (event) => {
         event.preventDefault(); 
+
         const nome = document.getElementById("idNome").value.trim();
-        const cpf = document.getElementById("idcpf").value.trim();
+        const cpf = document.getElementById("idCpf").value.trim();
         const nota = document.getElementById("idNota").value.trim();
         const comentario = document.getElementById("idCom").value.trim();
 
@@ -20,14 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
             comentario,
             data: new Date().toLocaleString("pt-BR")
         };
-        const feedbacksSalvos = JSON.parse(localStorage.getItem("feedbacks")) || [];
 
+        let feedbacksSalvos = JSON.parse(localStorage.getItem("feedbacks")) || [];
+
+    
         feedbacksSalvos.push(feedback);
 
         localStorage.setItem("feedbacks", JSON.stringify(feedbacksSalvos));
 
         alert("Feedback enviado com sucesso!");
 
-        form.reset(); 
+        form.reset();
     });
 });
+
