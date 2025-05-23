@@ -1,9 +1,19 @@
 //Codigo para o login.html funcionar e logar contas cadastradas
-document.getElementById('formLogin').addEventListener('submit', function(event) {
+document.getElementById('formLogin').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const cpf = document.getElementById('idCpf').value;
-    const senha = document.getElementById('idSenha').value;
+    const cpf = document.getElementById('idCpf').value.trim();
+    const senha = document.getElementById('idSenha').value.trim();
+
+    if (cpf.length !== 11) {
+        alert('CPF deve conter 11 dígitos.');
+        return;
+    }
+
+    if (senha.length < 8) {
+        alert('A senha deve ter pelo menos 8 caracteres.');
+        return;
+    }
 
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
@@ -13,10 +23,9 @@ document.getElementById('formLogin').addEventListener('submit', function(event) 
         alert(`Bem-vindo(a), ${usuarioAutenticado.nome}!`);
 
         localStorage.setItem('usuarioLogado', JSON.stringify(usuarioAutenticado));
-    
+
         window.location.href = 'menu.html';
     } else {
         alert('CPF ou senha incorretos. Tente novamente.');
     }
 });
-

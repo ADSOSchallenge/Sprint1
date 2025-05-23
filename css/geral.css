@@ -107,14 +107,25 @@ a{
 }
 /*Login*/
 #botaoent{
-    display: inline-block;
+    display:block;
     text-decoration: none;
-    padding: 2%;
-    margin: 0 2%;
     background-color: #467ab1;
-    color: #fff;
     font-weight: bold;
-    border: 1px solid #fff;
+}
+
+#btnLogout{
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    background-color: #285f89;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+#btnLogout:hover{
+    transform: scale(1.05);
 }
 .menulogin {
     border-radius: 10px;
@@ -143,6 +154,7 @@ a{
 
 /*Tabela de agenda*/
 table {
+    margin-top: 3rem;
     width: 100%;
     text-align: center;
   }
@@ -196,7 +208,7 @@ form {
     color: #000000;
     font-size: 15px;
 }
-input, button {
+input, button,select {
     width: 100%;
     margin: 5px 0;
     padding: 8px;

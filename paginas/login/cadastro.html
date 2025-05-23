@@ -23,7 +23,7 @@
                 <li><a href="../login/login.html" aria-label="Página de login">Login</a></li>
             </ul>
         </nav>
-    </header>    
+    </header>
 
     <main>
         <section>
@@ -36,8 +36,7 @@
 
                 <div>
                     <label for="idCpf">CPF:</label>
-                    <input type="text" id="idCpf" name="cpf" placeholder="Digite seu CPF..." required pattern="\d{11}"
-                        maxlength="11">
+                    <input type="text" maxlength="11" id="idCpf" name="cpf" placeholder="Digite seu CPF..." required>
                 </div>
 
                 <div>
@@ -47,8 +46,19 @@
 
                 <div>
                     <label for="idSenha">Senha:</label>
-                    <input type="password" id="idSenha" name="senha" placeholder="Digite uma senha de 8 dígitos..." required
-                        minlength="8">
+                    <input type="password" id="idSenha" name="senha" placeholder="Digite uma senha de 8 dígitos..."
+                        required maxlength="8">
+                </div>
+
+                <div>
+                    <label for="idTipoUsuario">Tipo de Usuário:</label>
+                    <select id="idTipoUsuario" required>
+                        <option value="">Selecione</option>
+                        <option value="medico">Médico</option>
+                        <option value="paciente">Paciente</option>
+                    </select>
+
+                    
                 </div>
 
                 <button aria-label="Botão cadastro" type="submit">Cadastrar</button>

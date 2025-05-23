@@ -26,16 +26,19 @@ O projeto está organizado dentro da pasta **Sprint1**, contendo diferentes dire
     - `contato.js` → Registra contato do usuário para o ADSOS entrar em contato.
     - `feedback.js` → Registra os feedbacks dos usuários na página `feedback.html`.
     - `login.js` → Responsável por logar os usuários e redirecionar para a página `menu.html`.
+    - `logout.js` → Responsável por deslogar os usuários.
  
 - **paginas/** → Diretório onde estão as páginas individuais do site:
     - `contato.html` → Página dedicada ao suporte e contato.  
     - `FAQ.html` → Contém perguntas frequentes sobre o aplicativo.  
     - `integrantes.html` → Apresenta informações sobre os desenvolvedores do projeto.  
     - `tutorial.html` → Um guia prático para acessar e utilizar o aplicativo do hospital.
+    - 
     - **login/** → Subpasta com as páginas relacionadas à autenticação e navegação do usuário:
         - `cadastro.html` → Tela de cadastro de novos usuários.
         - `login.html` → Página de login do sistema.
         - `menu.html` → Menu principal exibido após o login.
+        - 
         - **logado/** → Subdiretório dentro de `login/`, contendo páginas específicas para usuários autenticados:
             - `agenda.html` → Visualização da agenda de consultas do usuário.
             - `agendamento.html` → Tela para agendamento de consultas.
