@@ -1,0 +1,7 @@
+export type TipoCadastro = {
+  nome:string;
+  cpf:number;
+  email:string;
+  senha:string;
+  tipo:string;
+} 
